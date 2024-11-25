@@ -1,0 +1,378 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#schedule {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.container2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.center-image {
+    width: 66%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 14px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #4A90E2;
+    border-radius: 30px;
+}
+
+h2 {
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+main {
+    padding: 5px;
+    max-width: 1010px;
+    margin: auto;
+}
+
+.concert {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    min-height: 150px;
+}
+
+.concert img.center-image {
+    width: 40%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.event-date {
+    background-color: #FF5733;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-align: center;
+    width: 80px;
+}
+
+.event-info {
+    flex: 1;
+    text-align: left;
+}
+
+.event-info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.event-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.buy-ticket {
+    background-color: #e83423;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.buy-ticket:hover {
+    background-color: #357ABD;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.team-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    text-justify: inter-word;
+}
+
+.team-member:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.qa-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.qa-title {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.qa-item {
+    margin-bottom: 15px;
+}
+
+.qa-question {
+    padding: 15px;
+    background-color: #4A90E2;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+}
+
+.qa-question:hover {
+    background-color: #0056e0;
+}
+
+.qa-answer {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #4A90E2;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.feedback-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feedback-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.feedback-button:hover {
+    background-color: #218838;
+}
+
+h5 {
+    margin-top: 70px;
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+/* Мобильные устройства */
+@media (max-width: 360px) {
+    .center-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .container {
+        padding-top: 100px;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .buy-ticket {
+        padding: 12px 25px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+    .center-image {
+        width: 80%;
+    }
+
+    .container {
+        padding-top: 100px;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .team-member {
+        width: 45%;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .buy-ticket {
+        padding: 15px 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+/* Десктопы */
+@media (min-width: 1200px) {
+    .center-image {
+        width: 60%;
+    }
+
+    .container {
+        padding-top: 130px;
+    }
+
+    .team {
+        flex-direction: row;
+    }
+
+    .team-member {
+        width: 300px;
+    }
+
+    .buy-ticket {
+        padding: 18px 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}
